@@ -1,0 +1,5 @@
+/bin
+/k8s
+.env 
+go.mod 
+go.sum 
