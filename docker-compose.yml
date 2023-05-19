@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+    web:
+        build: fiber_product:v1
+        ports: 
+            - "9000:9000"
+        environment: 
+            DATABASE_USER=robo
+            DATABASE_PASS=robo-pass
+            DATABASE_HOST=127.0.0.1
+            DATABASE_PORT=27017
+            DATABASE_NAME=microservices2
+            JWT_SECRET_KEY=secret
+

@@ -7,7 +7,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 	resthandlers "github.com/morka17/fiber_product/src/api/restHandlers"
 	"github.com/morka17/fiber_product/src/api/routes"
 	"github.com/morka17/fiber_product/src/db"
@@ -25,10 +25,10 @@ func init() {
 	flag.StringVar(&authAddr, "auth addr", "localhost:9001", "authentication service address")
 	flag.Parse()
 
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Panicln(err)
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	log.Panicln(err)
+	// }
 }
 
 func main() {
